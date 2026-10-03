@@ -217,6 +217,13 @@
                         <option value="UNPAID">未繳款/報名中 (灰)</option>
                         <option value="DIFF">待對帳/差額 (橙)</option>
                     </select>
+
+                    <span class="text-sm font-medium text-slate-600 ml-2">報名狀態：</span>
+                    <select id="filterRegistration" onchange="renderStatsTable()" class="border border-slate-300 rounded-lg px-3 py-1.5 text-sm bg-white text-slate-800 focus:ring-2 focus:ring-blue-500">
+                        <option value="ALL">全部狀態</option>
+                        <option value="REGISTERED">有報名參賽</option>
+                        <option value="UNREGISTERED">未報名</option>
+                    </select>
                 </div>
 
                 <div class="w-64">
@@ -1187,11 +1194,17 @@ Bank 男`;
             const tbody = document.getElementById('statsTbody');
             const zoneFilter = document.getElementById('filterZone').value;
             const statusFilter = document.getElementById('filterStatus').value;
+            const regFilter = document.getElementById('filterRegistration').value;
             const search = document.getElementById('searchClub').value.trim().toLowerCase();
 
             let rowsHtml = '';
             currentData.stats.forEach(r => {
                 if (zoneFilter !== 'ALL' && String(r.zone) !== zoneFilter) return;
+                
+                const hasRegistered = r.players > 0 || r.diners > 0;
+                if (regFilter === 'REGISTERED' && !hasRegistered) return;
+                if (regFilter === 'UNREGISTERED' && hasRegistered) return;
+
                 if (search && !r.name.toLowerCase().includes(search) && !r.code.toLowerCase().includes(search)) return;
 
                 const isPaid = r.received >= r.receivable && r.receivable > 0;
