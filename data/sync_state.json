@@ -1,0 +1,10 @@
+{
+  "last_sync_time": "2026-10-03T09:20:09.656952",
+  "next_scheduled_sync": "2026-10-03T12:20:09.656952",
+  "interval_hours": 3,
+  "buffer_hours": 1,
+  "last_window_start": "2026-10-03T05:20:06.730435",
+  "last_window_end": "2026-10-03T09:20:09.656952",
+  "is_first_sync": false,
+  "total_sync_count": 61
+}

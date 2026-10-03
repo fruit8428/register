@@ -1,0 +1,80 @@
+{
+  "09-1": {
+    "club_name": "台北市華安扶輪社",
+    "tag": "09-1華安社",
+    "sponsor": "協辦社",
+    "players": [
+      {
+        "name": "張宏庠",
+        "nickname": "P Scott",
+        "gender": "男"
+      },
+      {
+        "name": "林秋鳳",
+        "nickname": "P Scott夫人",
+        "gender": "女"
+      },
+      {
+        "name": "黃學宮",
+        "nickname": "PE Scott",
+        "gender": "男"
+      },
+      {
+        "name": "陳尚瑜",
+        "nickname": "S Johnnie",
+        "gender": "男"
+      },
+      {
+        "name": "林淑梅",
+        "nickname": "PP Tina",
+        "gender": "女"
+      },
+      {
+        "name": "張小媛",
+        "nickname": "PP Eva",
+        "gender": "女"
+      },
+      {
+        "name": "朱雲慧",
+        "nickname": "IPP Grace",
+        "gender": "女"
+      }
+    ],
+    "lunch_only": [],
+    "contact": "S Johnnie",
+    "phone": "0961-350881",
+    "updated_at": "2026-09-24 16:05:07"
+  },
+  "06-4": {
+    "club_name": "台北市南光扶輪社",
+    "tag": "06-4南光社",
+    "sponsor": null,
+    "players": [
+      {
+        "name": "郭芸槿",
+        "nickname": "郭芸槿",
+        "gender": "女"
+      }
+    ],
+    "lunch_only": [],
+    "contact": "",
+    "phone": "",
+    "updated_at": "2026-09-29 17:26:59"
+  },
+  "12-2": {
+    "club_name": "台北龍華扶輪社",
+    "tag": "12-2龍華社",
+    "sponsor": null,
+    "players": [
+      {
+        "name": "執行秘書",
+        "nickname": "Betty",
+        "gender": "男"
+      }
+    ],
+    "lunch_only": [],
+    "contact": "",
+    "phone": "",
+    "updated_at": "2026-10-03 06:20:08"
+  }
+}
